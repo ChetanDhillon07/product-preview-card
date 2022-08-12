@@ -1,0 +1,111 @@
+body{
+    background-color: hsl(30, 38%, 92%);
+}
+.card{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+}
+article {
+    background-color: hsl(0, 0%, 100%);
+    height: 25rem;
+    width: 16.65rem;
+    border-radius: 0rem 0.938rem 0.938rem 0rem;
+    grid-area: content;
+    grid-column: 3;
+    grid-row: 1;
+}
+.picture{
+    position: relative;
+    top: 0.25rem;
+}
+.perfume{
+    margin: 1rem 0rem 0rem 0rem;
+    height: 25rem;
+    border-radius: 0.938rem 0rem 0rem 0.938rem;
+    position: relative;
+    bottom: 0.25rem;
+}
+p {
+    
+    font-weight: 100;
+    position: relative;
+    left: 1.25rem;
+    top: 1.25rem;
+}
+button {
+    background-color:hsl(158, 36%, 37%);
+    position: relative;
+    right: 0.313;
+    bottom: 0.625rem;
+    border: none;
+    color: white;
+    padding: 1rem 2rem;
+    text-align: center;
+    font-size: 1rem;
+    transition: 0.3s;
+    margin: 0.25rem 0.125rem;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 0.938rem;   
+}
+button:hover{
+    background-color: hsl(158, 51%, 17%);
+}
+
+.name {
+    color: hsl(228, 12%, 48%);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.75rem;
+}
+.about {
+    font-size: 0.75rem;
+    font-family: 'Montserrat', sans-serif;
+    color: hsl(228, 12%, 48%);
+}
+.brand {
+    font-family: 'Fraunces', serif;
+    font-weight: 800;
+    font-size: 1.875rem;    
+    position: relative;
+    bottom: 6.25rem;
+}
+.fprice {
+    font-family: 'Montserrat', sans-serif;
+    color: hsl(228, 12%, 48%);
+    font-size: 0.75rem;
+    position: relative;
+    left: 10rem;
+    bottom: 3.75rem;
+}
+.rprice {
+    font-family: 'Fraunces', serif;
+    color:hsl(158, 36%, 37%);
+    font-size: 1.875rem;
+    font-weight: 800;
+}
+@media screen and (max-width: 768px){
+    .card{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    .perfume{
+        border-radius: 0.938rem 0.938rem 0rem 0rem;
+        position: relative;
+        max-width: 16.7rem;
+        top: 0.75rem;
+        height: auto;
+        left: 0.025rem;
+    }
+    article{
+        border-radius:0rem 0rem 0.938rem 0.938rem ;
+        max-width: 17rem;
+    }
+}
